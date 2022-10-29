@@ -6,12 +6,95 @@ package com.procesosguardianes.generacioncalendario;
 
 public class DayConfiguration implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DayConfiguration() {
-    }
+	@org.kie.api.definition.type.Label(value = "dia")
+	private java.lang.Integer day;
+	@org.kie.api.definition.type.Label(value = "mes")
+	private java.lang.Integer month;
+	@org.kie.api.definition.type.Label(value = "año")
+	private java.lang.Integer year;
+	@org.kie.api.definition.type.Label(value = "calendario")
+	private com.procesosguardianes.generacioncalendario.Calendar calendar;
+	@org.kie.api.definition.type.Label(value = "DiaLaborable")
+	private java.lang.Boolean isWorkingDay;
+	@org.kie.api.definition.type.Label(value = "NumeroGuardias")
+	private java.lang.Integer numShifts;
+	@org.kie.api.definition.type.Label(value = "NumConsultas")
+	private java.lang.Integer numConsultations;
 
+	public DayConfiguration() {
+	}
 
+	public java.lang.Integer getDay() {
+		return this.day;
+	}
 
+	public void setDay(java.lang.Integer day) {
+		this.day = day;
+	}
+
+	public java.lang.Integer getMonth() {
+		return this.month;
+	}
+
+	public void setMonth(java.lang.Integer month) {
+		this.month = month;
+	}
+
+	public java.lang.Integer getYear() {
+		return this.year;
+	}
+
+	public void setYear(java.lang.Integer year) {
+		this.year = year;
+	}
+
+	public com.procesosguardianes.generacioncalendario.Calendar getCalendar() {
+		return this.calendar;
+	}
+
+	public void setCalendar(
+			com.procesosguardianes.generacioncalendario.Calendar calendar) {
+		this.calendar = calendar;
+	}
+
+	public java.lang.Boolean getIsWorkingDay() {
+		return this.isWorkingDay;
+	}
+
+	public void setIsWorkingDay(java.lang.Boolean isWorkingDay) {
+		this.isWorkingDay = isWorkingDay;
+	}
+
+	public java.lang.Integer getNumShifts() {
+		return this.numShifts;
+	}
+
+	public void setNumShifts(java.lang.Integer numShifts) {
+		this.numShifts = numShifts;
+	}
+
+	public java.lang.Integer getNumConsultations() {
+		return this.numConsultations;
+	}
+
+	public void setNumConsultations(java.lang.Integer numConsultations) {
+		this.numConsultations = numConsultations;
+	}
+
+	public DayConfiguration(java.lang.Integer day, java.lang.Integer month,
+			java.lang.Integer year,
+			com.procesosguardianes.generacioncalendario.Calendar calendar,
+			java.lang.Boolean isWorkingDay, java.lang.Integer numShifts,
+			java.lang.Integer numConsultations) {
+		this.day = day;
+		this.month = month;
+		this.year = year;
+		this.calendar = calendar;
+		this.isWorkingDay = isWorkingDay;
+		this.numShifts = numShifts;
+		this.numConsultations = numConsultations;
+	}
 
 }
