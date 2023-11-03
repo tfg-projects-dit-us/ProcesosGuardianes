@@ -85,35 +85,6 @@
             "Result" : new StringDataType()
         ]
     ],
-    
-    [
-        "name" : "CustomRESTWIH",
-        "displayName" : "Rest con TLS",
-        "icon" : "defaultwebserviceicon.png",
-
-        "parameters" : [
-            "Headers" : new StringDataType(),
-            "Method" : new StringDataType(),
-            "Url" : new StringDataType()
-        ],
-        "results" : [
-            "Result" : new StringDataType()
-        ]
-    ],
-    
-    [
-        "name" : "CustomCalendarWIH",
-        "displayName" : "Tarea Calendario",
-        "icon" : "defaultwebserviceicon.png",
-
-        "parameters" : [
-            "Month" : new IntegerDataType(),
-            "Year" : new IntegerDataType()
-        ],
-        "results" : [
-            "Result" : new StringDataType()
-        ]
-    ],
 
     [
         "name" : "WebService",
@@ -147,7 +118,6 @@
           "Message" : new StringDataType()
         ]
     ],
-    
 
     [
         "name" : "Milestone",

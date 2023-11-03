@@ -9,24 +9,7 @@
     <event-listeners/>
     <task-event-listeners/>
     <globals/>
-<<<<<<< HEAD
     <work-item-handlers/>
-=======
-    <work-item-handlers>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new com.kie.CustomRESTWIH()</identifier>
-            <parameters/>
-            <name>CustomRESTWIH</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new com.kie.CustomCalendarWIH()</identifier>
-            <parameters/>
-            <name>CustomCalendarWIH</name>
-        </work-item-handler>
-    </work-item-handlers>
->>>>>>> desarrollo
     <environment-entries/>
     <configurations/>
     <required-roles/>
